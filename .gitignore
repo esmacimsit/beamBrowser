@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+*.log
+*.app/
+*.framework/
+electron/**/*.app/
+electron/**/*.framework/
+

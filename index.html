@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Beam Browser</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    .search-container {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: none;
+      background-color: #0078d4;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <select id="engine">
+      <option value="google">Google</option>
+      <option value="duckduckgo">DuckDuckGo</option>
+      <option value="bing">Bing</option>
+      <option value="yahoo">Yahoo</option>
+      <option value="brave">Brave</option>
+      <option value="ecosia">Ecosia</option>
+      <option value="yandex">Yandex</option>
+    </select>
+    <input type="text" placeholder="Search something..." />
+    <button>Search</button>
+  </div>
+</body>
+<!-- keep it -->
+<script src="renderer.js"></script>
+</html>
